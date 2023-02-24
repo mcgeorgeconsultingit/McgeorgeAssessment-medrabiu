@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <menuitem id="main_menu_elearning" name="E-learning"/>
+        <menuitem id="main_menu_elearning_course" name="Courses" parent="main_menu_elearning" action="action_course_form_view"/>
+        <record id="action_course_form_view" model="ir.actions.act_window">
+            <field name="name">Course Form</field>
+            <field name="res_model">elearning.course</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree,kanban,search</field>
+            <field name="search_view_id" ref="course_search_view"/>
+            <field name="context">{"search_default_course_title": 1, "search_default_course_code": 1}</field>
+        </record>
+    </data>
+</odoo>

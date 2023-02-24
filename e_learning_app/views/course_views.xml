@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <record id="course_form_view" model="ir.ui.view">
+            <field name="name">Course Form View</field>
+            <field name="model">elearning.course</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="school_name"/>
+                            <field name="level"/>
+                            <field name="academic_year"/>
+                            <field name="semester"/>
+                            <field name="faculty"/>
+                            <field name="department"/>
+                            <field name="course_title"/>
+                            <field name="course_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+
+<!-- search View -->
+        <record id="course_search_view" model="ir.ui.view">
+            <field name="name">Course Search View</field>
+            <field name="model">elearning.course</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="course_title"/>
+                    <field name="course_code"/>
+                </search>
+            </field>
+        </record>
+
+
+<!-- search View  End-->
+
+<!-- Kanban View -->
+        <record id="course_kanban_view" model="ir.ui.view">
+            <field name="name">Course Kanban View</field>
+            <field name="model">elearning.course</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="course_title"/>
+                    <field name="course_code"/>
+                </kanban>
+            </field>
+        </record>
+
+<!-- Kanban View End -->
+
+
